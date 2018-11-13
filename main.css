@@ -1,0 +1,56 @@
+.button-1{
+  /* padding: 100%; */
+  background-color: cyan;
+  background-image: url("./images/gnome.png");
+  width: 100px;
+  height: 100px;
+  display: block; margin-left: auto; margin-right: auto; margin-top: 20px;
+}
+
+.top-of-app{
+  background-image: url("./images/placeholder.jpg");
+  margin-top: 20px;
+}
+
+.input-text{
+  width: 100%;
+  height: 40px;
+}
+
+.container{
+  border: 10px; text-align: center; line-height: 50px; width: 100px; margin: auto; font-size: 25px; display: inline-block;
+  text-align: center; padding-top: 100px;
+
+}
+
+.bottom-of-app{
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+      bottom:0%;
+      width: 100%;
+      margin-left: -15px;
+      margin-bottom: 20px;
+}.
+
+#top-text{
+  text-align: center;
+}
+
+#userActions{
+	display: table-cell;
+	height: 150px;
+	width: 200px;
+	vertical-align: middle;
+	text-align: center;
+	color: #37474F;
+	background-color: #FFFFFF;
+	border: solid 2px #333333;
+	border-radius: 10px;
+}
+#userActions input{
+	width: 150px;
+	margin: auto;
+}
+#imgPrime{ display: none; }

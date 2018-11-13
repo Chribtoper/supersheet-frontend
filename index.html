@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<link id="bootstrap" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<div class="container-fluid">
+<html>
+  <head>
+    <link rel="stylesheet" href="./main.css"/>
+    <link id="dark-style" rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css"/>
+    <link href="imgur/build/imgur.min.css" rel="stylesheet" media="screen">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+<form class="button-and-search">
+  <div class="top-of-app">
+    <h1 id="top-text" class="text-white">PlaceHolder Text</h1>
+    <button class="button-1" id="button-1">
+  </div>
+
+  <div class="bottom-of-app">
+    <input type="text" name="search" value="" placeholder="Just placeholder text..." class="input-text">
+  </div>
+</form>
+
+    <div id="container" class="container">
+            <div class="dropzone"></div>
+    </div>
+
+    <script type="text/javascript" src="src/index.js"></script>
+    <script src="imgur/build/imgur.min.js"></script>
+<script>
+    var callback = function (res) {
+        if (res.success === true) {
+            console.log(res.data.link);
+            fetch('http://localhost:3000/api/v1/products', {
+            method: 'POST',
+            headers: {
+              "Content-Type" : "application/json; charset=utf-8"
+            },
+            body: JSON.stringify({
+              url: res.data.link,
+              product_sheet_id: 1
+            })
+          })
+        }
+    };
+
+    new Imgur({
+        clientid: '',
+        callback: callback
+    });
+</script>
+  </body>
+</html>
+</div>
