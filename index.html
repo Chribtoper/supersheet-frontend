@@ -25,29 +25,8 @@
     </div>
 
     <script type="text/javascript" src="src/index.js"></script>
-    <script src="imgur/build/imgur.min.js"></script>
-<script>
-    var callback = function (res) {
-        if (res.success === true) {
-            console.log(res.data.link);
-            fetch('http://localhost:3000/api/v1/products', {
-            method: 'POST',
-            headers: {
-              "Content-Type" : "application/json; charset=utf-8"
-            },
-            body: JSON.stringify({
-              url: res.data.link,
-              product_sheet_id: 1
-            })
-          })
-        }
-    };
+    <script type="text/javascript" src="imgur/build/imgur.min.js"></script>
 
-    new Imgur({
-        clientid: '',
-        callback: callback
-    });
-</script>
   </body>
 </html>
 </div>
