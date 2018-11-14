@@ -1,6 +1,6 @@
 /*jslint browser: true, debug: true*/
 /*global define, module, exports*/
-dropZone.addEventListener('mouseover', ()=> {
+// dropZone.addEventListener('mouseover', ()=> {
 (function (root, factory) {
     "use strict";
     if (typeof define === 'function' && define.amd) {
@@ -159,4 +159,4 @@ dropZone.addEventListener('mouseover', ()=> {
 
     return Imgur;
 }));
-});
+// });
