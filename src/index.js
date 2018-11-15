@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <li id="dropdown-${sheet.id}" class="listy">
         <a href="#sheetSubmenu-${sheet.id}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">${sheet.name}</a>
         <ul class="collapse list-unstyled" id="sheetSubmenu-${sheet.id}">
-        <a class="btn btn-info" href="http://localhost:3000/api/v1/product_sheets/download/${sheet.id}">Download CSV</a>
+        <div class="flex">
+          <a class="btn btn-info" href="http://localhost:3000/api/v1/product_sheets/download/${sheet.id}">Download CSV</a>
+                    <a class="btn btn-warning" id="show-button-${sheet.id}" data-id="${sheet.id}">Display</a>
+        </div>
         </ul>
       </li>
       `
@@ -26,7 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
     productDropdown.innerHTML = allSheets //try returning this
   }).then(() => {
     $('.listy').click( function(e) {
-        $('.listy > .collapse').collapse('hide');
+        if ((event.target.classList.value === "btn btn-warning") ||
+            (event.target.classList.value === "btn btn-info")) {
+            // You're good, don't do anything.
+        } else {
+          $('.listy > .collapse').collapse('hide');
+        }
     });
   })
 
