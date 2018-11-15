@@ -175,3 +175,7 @@ ul ul a {
   margin-right:1px;
   text-align: -webkit-auto
 }
+
+.csv-table {
+  display: none;
+}
