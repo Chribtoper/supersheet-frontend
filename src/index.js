@@ -18,7 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <li id="dropdown-${sheet.id}" class="listy">
         <a href="#sheetSubmenu-${sheet.id}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">${sheet.name}</a>
         <ul class="collapse list-unstyled" id="sheetSubmenu-${sheet.id}">
-        <a class="btn btn-info" href="http://localhost:3000/api/v1/product_sheets/download/${sheet.id}">Download CSV</a>
+        <div class="flex">
+          <a class="btn btn-info" href="http://localhost:3000/api/v1/product_sheets/download/${sheet.id}">Download CSV</a>
+          <a class="btn btn-warning">Display</a>
+        </div>
         </ul>
       </li>
       `
