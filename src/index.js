@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
     let productDropdown = document.querySelector("#pageSubmenu");
     let selectSheet = document.querySelector("#select-sheet");
-
+    let hiddenNum = document.getElementById('hidden-num')
   fetch('http://localhost:3000/api/v1/product_sheets')
   .then( response => response.json())
   .then( json => {
     let allSheets = json.map( (sheet) => {
-      selectSheet.innerHTML += `<option value="${sheet.id}">${sheet.name}</option>`
+      selectSheet.innerHTML += `<option id="selector-${sheet.id}" value="${sheet.id}">${sheet.name}</option>`
       return `
-      <li class="listy">
+      <li id="dropdown-${sheet.id}" class="listy">
         <a href="#sheetSubmenu-${sheet.id}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">${sheet.name}</a>
         <ul class="collapse list-unstyled" id="sheetSubmenu-${sheet.id}">
         <a class="btn btn-info" href="http://localhost:3000/api/v1/product_sheets/download/${sheet.id}">Download CSV</a>
