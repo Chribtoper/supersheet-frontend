@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let allSheets = json.map( (sheet) => {
       selectSheet.innerHTML += `<option value="${sheet.id}">${sheet.name}</option>`
       return `
-      <li>
+      <li class="listy">
         <a href="#sheetSubmenu-${sheet.id}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">${sheet.name}</a>
         <ul class="collapse list-unstyled" id="sheetSubmenu-${sheet.id}">
         <a class="btn btn-info" href="http://localhost:3000/api/v1/product_sheets/download/${sheet.id}">Download CSV</a>
@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
       `
     }).join('')
     productDropdown.innerHTML = allSheets //try returning this
+  }).then(() => {
+    $('.listy').click( function(e) {
+        $('.listy > .collapse').collapse('hide');
+    });
   })
 
 }); // End DOMContentLoaded
