@@ -141,3 +141,7 @@ ul ul a {
 .btn.btn-success {
     width: -webkit-fill-available;
 }
+
+#select-sheet{
+  width: 300px;
+}

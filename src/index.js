@@ -7,11 +7,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   });
     let productDropdown = document.querySelector("#pageSubmenu");
+    let selectSheet = document.querySelector("#select-sheet");
 
   fetch('http://localhost:3000/api/v1/product_sheets')
   .then( response => response.json())
   .then( json => {
     let allSheets = json.map( (sheet) => {
+      selectSheet.innerHTML += `<option value="${sheet.id}">${sheet.name}</option>`
       return `
       <li>
         <a href="#sheetSubmenu-${sheet.id}" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">${sheet.name}</a>
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </li>
       `
     }).join('')
-    productDropdown.innerHTML = allSheets
+    productDropdown.innerHTML = allSheets //try returning this
   })
 
 }); // End DOMContentLoaded
