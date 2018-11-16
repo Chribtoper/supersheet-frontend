@@ -203,13 +203,21 @@ background-size:     cover;
 }
 #select-sheet {
   background-color: inherit;
+  width: 70%;
 }
 
 #input-text {
-  background-position: center;
-  margin-top: 200px;
-  margin-bottom: -100px;
-  width: 200px;
+  margin-top: 100px;
+  margin-bottom: -150px;
+  width: 190px;
   height:100px;
   font-size:25pt;
+  display: inline-block;
+}
+
+#smoll-boi {
+background-image: url("./images/gnome.png");
+width: 100px;
+height: 100px;
+display: block; margin-left: 10px; margin-right: auto; margin-top: 30px;
 }
