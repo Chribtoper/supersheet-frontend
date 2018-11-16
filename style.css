@@ -145,3 +145,67 @@ ul ul a {
 #select-sheet{
   width: 300px;
 }
+
+/* For buttons on side bar */
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.btn.btn-info {
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex:  1 1 auto;
+  -webkit-flex:  1 1 auto;
+  -ms-flex:  1 1 auto;
+  flex:  1 1 auto;
+  margin-right:1px;
+  text-align: -webkit-auto
+}
+
+.btn.btn-warning {
+  -webkit-box-flex: 1 1 auto;
+  -moz-box-flex:  1 1 auto;
+  -webkit-flex:  1 1 auto;
+  -ms-flex:  1 1 auto;
+  flex:  1 1 auto;
+  margin-right:1px;
+  text-align: -webkit-auto
+}
+
+.csv-table {
+  display: none;
+}
+
+.table-body {
+
+}
+
+.img {
+  position: relative;
+float: left;
+width:  100px;
+height: 100px;
+background-position: 50% 50%;
+background-repeat:   no-repeat;
+background-size:     cover;
+}
+
+#input-text {
+  background-color: inherit;
+}
+#select-sheet {
+  background-color: inherit;
+}
+
+#input-text {
+  background-position: center;
+  margin-top: 200px;
+  margin-bottom: -100px;
+  width: 200px;
+  height:100px;
+  font-size:25pt;
+}

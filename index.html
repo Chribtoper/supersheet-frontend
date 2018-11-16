@@ -37,10 +37,6 @@
                     </select>
                     <button type="button" id="delete-button" class="btn btn-danger">Delete Product Sheet</button>
         <!-- the text bar -->
-  <div class="form-group">
-    <label></label>
-    <input type="text" class="form-control" id="input-text" aria-describedby="price" placeholder="Enter Product Price">
-  </div>
     </div>
     </nav>
     </div>
@@ -76,8 +72,30 @@
       <!-- the drop zone  -->
 
         <div id="container" class="container">
-                <div class="dropzone"></div>
+            <input type="text" class="form-control" id="input-text" aria-describedby="price" placeholder="Enter Product Price">
+          <div class="dropzone"></div>
+          <!-- CSV Table -->
+          <div class="csv-table">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Tags</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Image</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <!-- What we will be rendering with JS -->
+                <tr>
+                  <th scope="row">1</th>
+                </tr> <!-- What we will be rendering with JS -->
+              </tbody>
+            </table>
+          </div> <!-- End of CSV Table -->
         </div>
+
 
   </div>
 
