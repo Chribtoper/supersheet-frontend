@@ -180,6 +180,10 @@ ul ul a {
   display: none;
 }
 
+.helpSection {
+  display: none;
+}
+
 .table-body {
 
 }
