@@ -3,7 +3,9 @@
     height: 200px;
     margin: 200px;
     position: relative;
-    width: auto
+    width: auto;
+    margin-top: 50px;
+    /* margin-bottom: -150px; */
 }
 
 .dropzone p {

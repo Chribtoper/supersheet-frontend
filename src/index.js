@@ -39,3 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
 }); // End DOMContentLoaded
+
+document.getElementById('smoll-boi').addEventListener('click', () => {
+  window.alert('Project built by Roger Vera and Christopher Stolfa')
+})
