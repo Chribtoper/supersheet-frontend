@@ -193,3 +193,19 @@ background-position: 50% 50%;
 background-repeat:   no-repeat;
 background-size:     cover;
 }
+
+#input-text {
+  background-color: inherit;
+}
+#select-sheet {
+  background-color: inherit;
+}
+
+#input-text {
+  background-position: center;
+  margin-top: 200px;
+  margin-bottom: -100px;
+  width: 200px;
+  height:100px;
+  font-size:25pt;
+}
