@@ -1,3 +1,5 @@
+            {::nomarkdown}
+
             <h1>How to User SuperSheet</h1>
             <hr />
             <h3>This app is designed for creating fast product sheets</h3>
@@ -21,3 +23,7 @@
               Select your sheet from the select bar located at the top of the page.
               Click on the 'Delete Product Sheet' button to delete your sheet.<br><br>
             </h5>
+
+{:/}
+            
+
