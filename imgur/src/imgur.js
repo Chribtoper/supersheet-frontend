@@ -1,5 +1,4 @@
-/*jslint browser: true, debug: true*/
-/*global define, module, exports*/
+
 // dropZone.addEventListener('mouseover', ()=> {
 (function (root, factory) {
     "use strict";
