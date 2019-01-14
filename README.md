@@ -1,7 +1,8 @@
                                     How to User SuperSheet
 
-                        This app is designed for creating fast product sheets
+                        This app is designed for creating fast product CSV sheets
 
+              Backend can be found here https://github.com/Chribtoper/Supersheet
             
               First, from the left sidebar, create a new sheet and enter the name
               you want to give to your sheet.
