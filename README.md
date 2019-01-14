@@ -22,4 +22,5 @@
               Select your sheet from the select bar located at the top of the page.
               Click on the 'Delete Product Sheet' button to delete your sheet.
             
+            Credits to https://github.com/pinceladasdaweb/ for the Imgur drop box itself
 
