@@ -353,6 +353,6 @@ productDropdown.addEventListener('click', () => {
  };
 
  new Imgur({
-     clientid: '',
+     clientid: `${ENV['IMGUR-KEY']}`,
      callback: callback
  });
