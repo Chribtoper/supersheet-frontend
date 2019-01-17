@@ -189,7 +189,7 @@ deleteButton.addEventListener('click', () => {
 if (x){
   selectSheet.removeChild(document.getElementById(`selector-${postSheetId}`))
   productDropdown.removeChild(document.getElementById(`dropdown-${postSheetId}`))
-  fetch(`http://localhost:3000/api/v1/product_sheets/${postSheetId}`, {
+  fetch(`https://super-sheet.herokuapp.com/api/v1/product_sheets/${postSheetId}`, {
   method: 'DELETE'
 })
 } else {
@@ -201,7 +201,7 @@ if (x){
 newCsv.addEventListener('click', () => {
   if (createSheet.value!=""){
     createSheet.value = ""
-    fetch('http://localhost:3000/api/v1/product_sheets', {
+    fetch('https://super-sheet.herokuapp.com/api/v1/product_sheets', {
     method: 'POST',
     headers: {
       "Content-Type" : "application/json; charset=utf-8"
@@ -211,7 +211,7 @@ newCsv.addEventListener('click', () => {
     })
   })
   .then( () => {
-    fetch('http://localhost:3000/api/v1/product_sheets')
+    fetch('https://super-sheet.herokuapp.com/api/v1/product_sheets')
     .then( response => response.json())
     .then( json => {
       let jsonArr = json.map( (product) => product)
@@ -291,7 +291,7 @@ productDropdown.addEventListener('click', () => {
       csvTable.style.display = 'block'
 
       // Fetch data to fill in csvTable
-      fetch(`http://localhost:3000/api/v1/product_sheets/${sheetId}`)
+      fetch(`https://super-sheet.herokuapp.com/api/v1/product_sheets/${sheetId}`)
       .then(response => response.json())
       .then(productSheet => {
         productSheet.products.forEach(product => {
@@ -338,7 +338,7 @@ productDropdown.addEventListener('click', () => {
      if (res.success === true) {
          textBox.value = ""
          console.log(res.data.link);
-         fetch('http://localhost:3000/api/v1/products', {
+         fetch('https://super-sheet.herokuapp.com/api/v1/products', {
          method: 'POST',
          headers: {
            "Content-Type" : "application/json; charset=utf-8"

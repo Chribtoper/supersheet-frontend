@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let productDropdown = document.querySelector("#pageSubmenu");
     let selectSheet = document.querySelector("#select-sheet");
     let hiddenNum = document.getElementById('hidden-num')
-  fetch('http://localhost:3000/api/v1/product_sheets')
+  fetch('https://super-sheet.herokuapp.com/api/v1/product_sheets')
   .then( response => response.json())
   .then( json => {
     let allSheets = json.map( (sheet) => {
