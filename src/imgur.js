@@ -352,6 +352,6 @@ productDropdown.addEventListener('click', () => {
      }
  };
  new Imgur({
-     clientid: `${process.env.IMGURKEY}`,
+     clientid: '8aa7ff5bb8fbd89',
      callback: callback
  });
