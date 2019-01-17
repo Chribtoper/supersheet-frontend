@@ -351,8 +351,7 @@ productDropdown.addEventListener('click', () => {
        }).then(response => myInput = "")
      }
  };
-console.log(process.env)
  new Imgur({
-     clientid: `${ENV['IMGUR-KEY']}`,
+     clientid: process.env.IMGURKEY,
      callback: callback
  });
