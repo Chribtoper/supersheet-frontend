@@ -2,7 +2,7 @@
 
                         This app is designed for creating fast product CSV sheets
 
-              Backend can be found here https://github.com/Chribtoper/Supersheet
+              Backend can be found here https://github.com/Chribtoper/Supersheet-Backend
             
               First, from the left sidebar, create a new sheet and enter the name
               you want to give to your sheet.
