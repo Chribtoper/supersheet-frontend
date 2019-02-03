@@ -1,4 +1,4 @@
-                                    How to User SuperSheet
+                                    How to Use SuperSheet
 
                         This app is designed for creating fast product CSV sheets
 
